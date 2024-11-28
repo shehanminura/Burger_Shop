@@ -1,0 +1,229 @@
+*{
+  margin: 0%;
+  padding: 0%;  
+}
+
+
+
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+     background-color: #000000;
+}
+
+a {
+text-decoration: none;
+}
+
+.et-hero-tabs,
+.et-slide {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+position: relative;
+background: #eee;
+    text-align: center;
+    padding: 0 2em;
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+}
+
+.et-hero-tabs-container {
+
+display: flex;
+flex-direction: row;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 70px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+background: #000000;
+z-index: 10;
+position: fixed ;
+&--top {
+    position: fixed;
+    top: 0;
+}
+}
+
+.et-hero-tab {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+color: #ffffff;
+letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+  &:hover {
+        color:white;
+  background: rgba(132, 132, 132, 0.8);
+        transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 6px;
+background: #66B1F1;
+transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+.et-hero-tabs,
+.et-slide {
+h1 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1rem;
+}
+}
+.et-hero-tab {
+    font-size: 1rem;
+}
+}
+
+.background {
+    background-image: url(https://i.pinimg.com/originals/24/f5/a6/24f5a6544ea5ec78b8f4e45c43d2113f.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */
+}
+
+.backgroundburgers{
+    background-image: url(https://i.pinimg.com/736x/74/ad/5e/74ad5e24cadedbef86c94cc65815c5be.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+.backgroundSubmarines{
+    background-image: url(https://i.pinimg.com/736x/16/5b/82/165b82dee6f1dd0e8ea18f3285c6ee56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+
+.backgroundFries{
+    background-image: url(https://i.pinimg.com/736x/e0/1f/ab/e01faba9ad66a6585f19f5f2efac0edc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+
+.backgroundpasta{
+    background-image: url(https://i.pinimg.com/736x/58/34/40/58344082b23b29c57ccf7943fba06661.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+
+
+.backgroundChicken{
+    background-image: url(https://i.pinimg.com/736x/a0/17/2f/a0172f8ab2de73f0f8ccf02e71ce5c7d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+
+.backgroundBeverages{
+    background-image: url(https://i.pinimg.com/736x/2d/f7/17/2df71796429a8f41283f70dabd6d8eea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Sets the height to fill the viewport */    
+    color: #fff;
+}
+
+
+  
+  /* Content */
+  .burger-content {
+    color: white;
+    padding: 0 20px;
+    animation: fadeIn 1.2s ease-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ensure readability */
+  }
+  
+  .burger-title {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .burger-subtitle {
+    font-size: 1.5rem;
+    margin: 15px 0 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Improve readability */
+  }
+  
+  /* Button Styling */
+  .burger-button {
+    background: linear-gradient(90deg, hsl(0, 0%, 0%), #ff0000);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0);
+    transition: all 0.3s ease;
+    
+  }
+  
+  .burger-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0);
+  }
+  
+  .burger-button:active {
+    transform: scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
