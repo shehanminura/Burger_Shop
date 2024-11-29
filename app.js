@@ -426,7 +426,7 @@ function submarinesb(){
     }
 
 
-    
+    function burggerb(){
         console.log("jddj");
         window.location.href = 'all.html';
         console.log("jddj");	
@@ -456,7 +456,7 @@ function submarinesb(){
                         </div>`
             
         });
-    
+    }
 
 
   
