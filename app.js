@@ -221,269 +221,295 @@ let pasta=[
         itemname:"Baked Ravioli",
         pricelkr:2000.00,
         discount:0
-    },
+    }];
+Chicken.forEach(element => {
+	document.getElementById("burgers").innerHTML +=	
+				`<div class="card m-3 " style="width: 18rem;">
+				<img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">${element.itemname}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">${element.price}</li>
+					<li class="list-group-item">${element.discount}%</li>
+				</ul>
+				<div class="card-body">
+					<button class="btn bg-danger text-light" >Place Order</button>
+                      
+					<a href="#" class="card-link">Add to Cart</a>
+				</div>
+				</div>`
+	
+            });
+pasta.forEach(element => {
+	document.getElementById("pasta").innerHTML +=	
+	
+				`<div class="card m-3 " style="width: 18rem;">
+				<img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">${element.itemname}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">${element.price}</li>
+					<li class="list-group-item">${element.discount}%</li>
+				</ul>
+				<div class="card-body">
+					<button class="btn bg-danger text-light" >Place Order</button>
+                      
+					<a href="#" class="card-link">Add to Cart</a>
+				</div>
+				</div>`
+	});
 
- ];
 
 
-let submarines = [
-    {
-        itemcode: "B1016",
-        itemname: "Crispy Chicken Submarine (Large)",
-        price: 2000.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1017",
-        itemname: "Crispy Chicken Submarine (Regular)",
-        price: 1500.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1018",
-        itemname: "Chicken Submarine (Large)",
-        price: 1800.00,
-        discount: 3,
-    },
-    {
-        itemcode: "B1019",
-        itemname: "Chicken Submarine (Regular)",
-        price: 1400.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1020",
-        itemname: "Grinder Submarine",
-        price: 2300.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1021",
-        itemname: "Cheese Submarine",
-        price: 2200.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1022",
-        itemname: "Double Cheese n Chicken Submarine",
-        price: 1900.00,
-        discount: 16,
-    },
-    {
-        itemcode: "B1023",
-        itemname: "Special Horgie Submarine",
-        price: 2800.00,
-        discount: 0,
-    },
-    {
-        itemcode: "B1024",
-        itemname: "MOS Special Submarine",
-        price: 3000.00,
-        discount: 0,
-    }
-];
-function submarinesb(){
-    window.location.href = 'all.html';
-    submarines.forEach(element => {
-        document.getElementById("submarines").innerHTML +=	
-                    
-                    `  <div>
-                         <h1 class="bg-black text-light text-center">Burger</h1>
-                             </div>
-                    <div class="card m-3 " style="width: 18rem;">
-                    <img class="card-img-top" src="https://i.pinimg.com/736x/9a/77/a9/9a77a98489c7ee09deefd79d5fcfee79.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">${element.itemname}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">${element.price}</li>
-                        <li class="list-group-item">${element.discount}%</li>
-                        <li class="list-group-item">Total : </li>
-                    </ul>
-                    <div class="card-body">
-                        <button class="btn bg-danger text-light" >Place Order</button>
-                          
-                        <a href="#" class="card-link">Add to Cart</a>
-                    </div>
-                    </div>`
-        
-    });
-}
-    
-    function Chickenb(){
-        window.location.href = 'all.html';
-        Chicken.forEach(element => {
-            document.getElementById("Chicken").innerHTML +=	
-                        ` <div>
-                                <h1 class="bg-black text-light text-center">Chicken</h1>
-                            </div>
-                            <div class="card m-3 " style="width: 18rem;">
-                        <img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">${element.itemname}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">${element.price}</li>
-                            <li class="list-group-item">${element.discount}%</li>
-                            <li class="list-group-item">Total : </li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn bg-danger text-light" >Place Order</button>
-                              
-                            <a href="#" class="card-link">Add to Cart</a>
-                        </div>
-                        </div>`
-            
-        });
-         
-    }
-
-    function pastab(){
-        window.location.href = 'all.html';
-        pasta.forEach(element => {
-            document.getElementById("pasta").innerHTML +=
-                        `<div class="card m-3 " style="width: 18rem;">
-                        <img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">${element.itemname}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">${element.price}</li>
-                            <li class="list-group-item">${element.discount}%</li>
-                            <li class="list-group-item">Total : </li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn bg-danger text-light" >Place Order</button>
-                            
-                            <a href="#" class="card-link">Add to Cart</a>
-                        </div>
-                        </div>`
-            
+fries.forEach(element => {
+	document.getElementById("fries").innerHTML +=	
+	
+				`<div class="card m-3 " style="width: 18rem;">
+				<img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">${element.itemname}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">${element.price}</li>
+					<li class="list-group-item">${element.discount}%</li>
+				</ul>
+				<div class="card-body">
+					<button class="btn bg-danger text-light" >Place Order</button>
+                      
+					<a href="#" class="card-link">Add to Cart</a>
+				</div>
+				</div>`
+	
 });
-    
+
+Beverages.forEach(element => {
+	document.getElementById("Beverages").innerHTML +=	
+	
+				`<div class="card m-3 " style="width: 18rem;">
+				<img class="card-img-top" src="https://blog.ncponline.com/wp-content/uploads/2023/07/Blog_Summer-Beverage-Trends-Feature-Image.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">${element.itemname}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">${element.price}</li>
+					<li class="list-group-item">${element.discount}%</li>
+				</ul>
+				<div class="card-body">
+					<button class="btn bg-danger text-light" >Place Order</button>
+                      
+					<a href="#" class="card-link">Add to Cart</a>
+				</div>
+				</div>`
+	
+});
+burgger.forEach(element => {
+	document.getElementById("Chicken").innerHTML +=	
+	
+				`<div class="card m-3 " style="width: 18rem;">
+				<img class="card-img-top" src="https://freshchoicenelson.co.nz/wp-content/uploads/2019/06/free-range-chicken-nelson.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">${element.itemname}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">${element.price}</li>
+					<li class="list-group-item">${element.discount}%</li>
+					<li class="list-group-item">Total : </li>
+				</ul>
+				<div class="card-body">
+					<button class="btn bg-danger text-light" >Place Order</button>
+                      
+					<a href="#" class="card-link">Add to Cart</a>
+				</div>
+				</div>`
+	
+});
+
+class StickyNavigation {
+	
+	
+	constructor() {
+
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$('.et-hero-tab').click(function() { 
+			self.onTabClick(event, $(this)); 
+		});
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
+	
+	onTabClick(event, element) {
+		event.preventDefault();
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		$('html, body').animate({ scrollTop: scrollTop }, 600);
+	}
+	
+	onScroll() {
+		this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+	}
+	
+	onResize() {
+		if(this.currentId) {
+			this.setSliderCss();
+		}
+	}
+	
+	checkTabContainerPosition() {
+		let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+		if($(window).scrollTop() > offset) {
+			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+		} 
+		else {
+			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+		}
+	}
+	
+	findCurrentTabSelector(element) {
+		let newCurrentId;
+		let newCurrentTab;
+		let self = this;
+		$('.et-hero-tab').each(function() {
+			let id = $(this).attr('href');
+			let offsetTop = $(id).offset().top - self.tabContainerHeight;
+			let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+			if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+				newCurrentId = id;
+				newCurrentTab = $(this);
+			}
+		});
+		if(this.currentId != newCurrentId || this.currentId === null) {
+			this.currentId = newCurrentId;
+			this.currentTab = newCurrentTab;
+			this.setSliderCss();
+		}
+	}
+	
+	setSliderCss() {
+		let width = 0;
+		let left = 0;
+		if(this.currentTab) {
+			width = this.currentTab.css('width');
+			left = this.currentTab.offset().left;
+		}
+		$('.et-hero-tab-slider').css('width', width);
+		$('.et-hero-tab-slider').css('left', left);
+	}
+	
+}
+
+
+new StickyNavigation();
+
+
+
+
+
+function add(){
+    let code=document.getElementById("Item_Code").value;
+    let name=document.getElementById("Item_Name").value;
+    let price=document.getElementById("Price").value;
+    let discount=Number(document.getElementById("Discount").value);
+    let catogary=document.getElementById("itemDropdown").value;
+
+    if (catogary =="burgger") {
+        let burggers = {
+            itemcode : code,
+            itemname :name,
+            price : price,
+            discount : discount
+        }
+        burgger.push(burggers)
+    } else if (catogary == "Chicken"){
+        let Chickens = {
+            itemcode : code,
+            itemname :name,
+            price : price,
+            discount : discount
+        }
+        Chicken.push(Chickens)
+    }else if (catogary == "Beverages"){
+        let Beveragess = {
+            itemcode : code,
+            itemname :name,
+            price : price,
+            discount : discount
+        }
+        Beverages.push(Beveragess)
+    }else if (catogary == "Fries"){
+        let Friess = {
+            itemcode : code,
+            itemname :name,
+            price : price,
+            discount : discount
+        }
+        fries.push(Friess)
+    }else if (catogary == "Pasta"){
+        let friess = {
+            itemcode : code,
+            itemname :name,
+            price : price,
+            discount : discount
+        }
+        pasta.push(friess)
     }
-        
-    
-    function friesb(){
-        window.location.href = 'all.html';
-    fries.forEach(element => {
-        document.getElementById("fries").innerHTML +=	
-        
-                    `        <div>
-                                <h1 class="bg-black text-light text-center">fries</h1>
-                            </div>
-                    <div class="card m-3 " style="width: 18rem;">
-                    <img class="card-img-top" src="img/burgerHomepage.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">${element.itemname}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">${element.price}</li>
-                        <li class="list-group-item">${element.discount}%</li>
-                        <li class="list-group-item">Total : </li>
-                    </ul>
-                    <div class="card-body">
-                        <button class="btn bg-danger text-light" >Place Order</button>
-                          
-                        <a href="#" class="card-link">Add to Cart</a>
-                    </div>
-                    </div>`
-        
-    });
-    }
-       
-    function Beverageb(){
-        window.location.href = 'all.html';
-        Beverages.forEach(element => {
-            document.getElementById("Beverages").innerHTML +=	
-            
-                        ` <div>
-                            <h1 class="bg-black text-light text-center">Beverages</h1>
-                        </div>
-                        <div class="card m-3 " style="width: 18rem;">
-                        <img class="card-img-top" src="https://blog.ncponline.com/wp-content/uploads/2023/07/Blog_Summer-Beverage-Trends-Feature-Image.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">${element.itemname}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">${element.price}</li>
-                            <li class="list-group-item">${element.discount}%</li>
-                            <li class="list-group-item">Total : </li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn bg-danger text-light" >Place Order</button>
-                              
-                            <a href="#" class="card-link">Add to Cart</a>
-                        </div>
-                        </div>`
-            
-        });
-    }
-
-
-    function burggerb(){
-        console.log("jddj");
-        window.location.href = 'all.html';
-        console.log("jddj");	
-        document.getElementById("jjj").innerHTML ="<h1>uyreiureiur</h1>"	
-        burgger.forEach(element => {
-            document.getElementById("burgers123").innerHTML +=	
-                        `
-                        <div>
-                            <h1 class="bg-black text-light text-center">burgers</h1>
-                        </div>
-                        <div class="card m-3 " style="width: 18rem;">
-                        <img class="card-img-top" src="https://freshchoicenelson.co.nz/wp-content/uploads/2019/06/free-range-chicken-nelson.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">${element.itemname}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">${element.price}</li>
-                            <li class="list-group-item">${element.discount}%</li>
-                            <li class="list-group-item">Total : </li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn bg-danger text-light" >Place Order</button>
-                              
-                            <a href="#" class="card-link">Add to Cart</a>
-                        </div>
-                        </div>`
-            
-        });
-    }
-
-
-  
-
-
-   
-    
-    
-    
-
+    console.log(burgger);
     
 
 
 
+    document.getElementById("table").innerHTML+= `
+        <tr>
+                        <td>${code}</td>
+                        <td>${name}</td>
+                        <td>${price}</td>
+                        <td>${discount}</td>
+                        <td>${catogary}</td>
+                    
+        </tr>
+    `
+    document.getElementById("Item_Code").value = "";
+    document.getElementById("Item_Name").value = "";
+    document.getElementById("Price").value = "";
+    document.getElementById("Discount").value = "";
+
+
+}
+
+let Customer=[];
+
+
+function addcustomer(){
+    let customercode=document.getElementById("Customer_Code").value;
+    let customername=document.getElementById("Customer_Name").value;
+    let customernumber=document.getElementById("Customernumber").value;
+    let customerbd=document.getElementById("Customerbd").value;
+
+
+    document.getElementById("tableCustomer").innerHTML+= `
+        <tr>
+                        <td>${customercode}</td>
+                        <td>${customername}</td>
+                        <td>${customernumber}</td>
+                        <td>${customerbd}</td>
+                       
+                    
+        </tr>
+    `
 
 
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
  
